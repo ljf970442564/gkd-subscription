@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 1,
+  "version": 2,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -8126,7 +8126,7 @@
           "rules": [
             {
               "fastQuery": true,
-              "actionCd": 300,
+              "actionCd": 1200,
               "actionDelay": 200,
               "swipeArg": {
                 "start": {
@@ -8167,7 +8167,6 @@
           "rules": [
             {
               "fastQuery": true,
-              "actionCd": 300,
               "actionDelay": 200,
               "swipeArg": {
                 "start": {
@@ -8196,7 +8195,6 @@
           "rules": [
             {
               "fastQuery": true,
-              "actionCd": 300,
               "actionDelay": 200,
               "swipeArg": {
                 "start": {
