@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 2,
+  "version": 3,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -5288,6 +5288,7 @@
             },
             {
               "key": 4,
+              "actionDelay": 500,
               "activityIds": ".activity.QPublicFragmentActivity",
               "matches": "ImageView[width<62] < [visibleToUser=true][desc=\"关闭广告\"]",
               "snapshotUrls": "https://i.gkd.li/i/33948809"
