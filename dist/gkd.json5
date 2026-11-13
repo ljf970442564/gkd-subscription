@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 3,
+  "version": 4,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -7039,7 +7039,8 @@
                 "https://i.gkd.li/i/24015674",
                 "https://i.gkd.li/i/23933925",
                 "https://i.gkd.li/i/17675894",
-                "https://i.gkd.li/i/18306858"
+                "https://i.gkd.li/i/18306858",
+                "https://i.gkd.li/i/34722511"
               ],
               "exampleUrls": "https://e.gkd.li/f7a90a07-6c8e-4986-8306-f64db4412e36"
             },
@@ -7066,9 +7067,24 @@
               ]
             },
             {
+              "key": 51,
+              "preKeys": [
+                0,
+                1
+              ],
+              "name": "②点击[不感兴趣]2",
+              "actionCdKey": 50,
+              "actionMaximumKey": 50,
+              "matches": "@[clickable=true] > [visibleToUser=true][text*=\"不感兴趣\" || text=\"相似内容过多\" || text*=\"不想看\" || text$=\"质量差\" || text=\"减少直播推荐\" || text=\"和当前视频无关\"]",
+              "snapshotUrls": [
+                "https://i.gkd.li/i/34722513"
+              ]
+            },
+            {
               "key": 70,
               "preKeys": [
-                50
+                50,
+                51
               ],
               "name": "③点击[关闭]",
               "anyMatches": [
