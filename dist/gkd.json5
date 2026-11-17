@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 7,
+  "version": 8,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -7973,12 +7973,16 @@
           "rules": [
             {
               "key": 0,
-              "matches": "@[clickable=true][text=\"不感兴趣\"] +(1,2,5) FlattenUIText[text=\"不感兴趣\"]",
+              "anyMatches": [
+                "@[clickable=true][text=\"不感兴趣\"] +(1,2,5) FlattenUIText[text=\"不感兴趣\"]",
+                "@[clickable=true][width<580 && height<170] > TextView[text=\"不感兴趣\"][visibleToUser=true]"
+              ],
               "snapshotUrls": [
-                "https://i.gkd.li/i/13800207",
                 "https://i.gkd.li/i/13996724",
+                "https://i.gkd.li/i/13800207",
                 "https://i.gkd.li/i/20035670",
-                "https://i.gkd.li/i/34876101"
+                "https://i.gkd.li/i/34876101",
+                "https://i.gkd.li/i/34942616"
               ],
               "exampleUrls": "https://e.gkd.li/f967dcd3-2196-4095-b5f0-a2cae15bdf23"
             },
@@ -8160,9 +8164,10 @@
                 "duration": 200
               },
               "activityIds": ".main.MainActivity",
-              "matches": "([visibleToUser=true] > [text$=\"广告\" || text$=\"（推广）\"][vid=\"desc\" || desc=\"广告\"]) || ([text=\"应用\" || text=\"购物\" || text=\"咨询\" || text=\"服务\" || text=\"预约\" || text=\"子薇剧场\"][text.length<6][index=1][visibleToUser=true]) || (ViewGroup[childCount=5] > ImageView +3 [text^=\"已售\" || text^=\" 已售\"] - TextView - [text=\"讲解中 丨 \"][index=1][visibleToUser=true])",
+              "matches": "([visibleToUser=true] > [text*=\"广告\" || text$=\"（推广）\"][vid=\"desc\" || desc=\"广告\"]) || ([text=\"应用\" || text=\"购物\" || text=\"咨询\" || text=\"服务\" || text=\"预约\" || text=\"子薇剧场\"][text.length<6][index=1][visibleToUser=true]) || (ViewGroup[childCount=5] > ImageView +3 [text^=\"已售\" || text^=\" 已售\"] - TextView - [text=\"讲解中 丨 \"][index=1][visibleToUser=true])",
               "snapshotUrls": [
                 "https://i.gkd.li/i/21142063",
+                "https://i.gkd.li/i/34942307",
                 "https://i.gkd.li/i/29403811",
                 "https://i.gkd.li/i/29403704",
                 "https://i.gkd.li/i/29403301",
