@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 10,
+  "version": 11,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -10479,15 +10479,20 @@
           "fastQuery": true,
           "matchTime": 10000,
           "actionMaximum": 1,
-          "activityIds": ".ui.activity.HomeActivity",
+          "activityIds": [
+            ".ui.activity.HomeActivity",
+            "com.bbk.launcher2.Launcher",
+            ".ui.activity.MainFrameActivity"
+          ],
           "rules": [
             {
               "key": 0,
-              "name": "自动签到",
-              "matches": "@[clickable=true] >2 [text=\"领取今日现金\"][visibleToUser=true]",
+              "name": "①自动签到",
+              "matches": "@[clickable=true] >(1,2) [text=\"领取今日现金\"][visibleToUser=true]",
               "snapshotUrls": [
                 "https://i.gkd.li/i/13201422",
-                "https://i.gkd.li/i/13372677"
+                "https://i.gkd.li/i/13372677",
+                "https://i.gkd.li/i/35172532"
               ]
             },
             {
@@ -10495,8 +10500,8 @@
                 0
               ],
               "key": 1,
-              "name": "在签到后关闭弹窗",
-              "matches": "@[clickable=true] >2 [text=\"明日继续来领\"][visibleToUser=true]",
+              "name": "②签到后关闭弹窗",
+              "matches": "@[clickable=true] >(1,2) [text=\"明日继续来领\"][visibleToUser=true]",
               "snapshotUrls": "https://i.gkd.li/i/13205634"
             }
           ]
