@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 12,
+  "version": 13,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -15263,7 +15263,8 @@
         },
         {
           "key": 2,
-          "name": "通知提示-更新提示",
+          "name": "更新提示",
+          "desc": "点击[暂不更新]",
           "matchTime": 20000,
           "actionMaximum": 1,
           "resetMatch": "app",
