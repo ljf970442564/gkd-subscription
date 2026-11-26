@@ -1,7 +1,7 @@
 {
   "id": 10001,
   "name": "ljf 的 GKD 订阅",
-  "version": 15,
+  "version": 16,
   "author": "ljf97",
   "updateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/gkd.json5",
   "checkUpdateUrl": "https://raw.githubusercontent.com/ljf97/gkd-subscription/main/dist/version.json5",
@@ -8926,7 +8926,7 @@
         {
           "key": 1,
           "name": "功能类-[上滑]继续看短剧",
-          "desc": "①读秒结束后[上滑] ②未显示[选集]时,每5秒[上滑]1次",
+          "desc": "出现 广告/直播间 时上滑跳过, ①读秒结束后[上滑] ②未显示[选集]时,每5秒[上滑]1次",
           "fastQuery": true,
           "activityIds": [
             "com.dragon.read.component.shortvideo.impl.ShortSeriesActivity",
